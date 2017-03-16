@@ -1,23 +1,35 @@
-#Write a library that contains a class that can represent any 2𝑥2 real matrice. 
-#Include two functions to calculate the sum and product of two matrices. 
-#Next, write a program that imports this library module and use it to perform calculations.
-#Examples:
-#
-# matrix_1 = Matrix(4,5,6,7)
-# matrix_2 = Matrix(2,2,2,1)
-#
-# matrix_3 = matrix_2.add(matrix_1)
-#
-#Try to expand your implementation as best as you can. 
-#Think of as many features as you can, and try implementing them.
-#(If you want you can expand implementation to NxN matrix.)
-#Make intelligent use of pythons syntactic sugar (overloading, iterators, generators, etc)
-#Most of all: CREATE GOOD, RELIABLE, READABLE CODE.
-#The goal of this task is for you to SHOW YOUR BEST python programming skills.
-#Impress everyone with your skills, show off with your code.
-#
-#When you are done upload this code to your github repository. 
-#The whole repository MUST be a fork from https://github.com/mwmajew/2017sum_era1_kol1
-#
-#Delete these comments before commit!
-#Good luck.
+
+import sys
+
+if len(sys.argv) != 5:
+	sys.exit ("Only accept 4 parameters")
+
+num1 = sys.argv[1]
+num2 = sys.argv[2]
+num3 = sys.argv[3]
+num4 = sys.argv[4]
+
+matrix = [[num1, num2], [num3, num4]]
+
+if len(sys.argv) != 5:
+	sys.exit ("Only accept 4 parameters")
+
+num5 = sys.argv[1]
+num6 = sys.argv[2]
+num7 = sys.argv[3]
+num8 = sys.argv[4]
+
+matrix2 = [num5, num6], [num7, num8]]
+
+def sum (matrix, matrix2)
+	for i in range(1,4):
+		reslt = matrix[i]+ matrix2[i]
+		return reslt
+		print reslt
+		
+def prod (matrix, matrix2)
+	for i in range(1,4):
+		reslt2 = matrix[i]* matrix2[i]
+		return reslt2
+		print reslt2	
+
